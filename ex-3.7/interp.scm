@@ -23,7 +23,7 @@
           (value-of exp1 (init-env))))))
 
 
-  ;; Func * Exp * Exp *Env -> Exp
+  ;; Func * Exp * Exp *Env -> ExpVal
   (define (do_binary func exp1 exp2 env)
     (let ((val1 (value-of exp1 env))
                 (val2 (value-of exp2 env)))
